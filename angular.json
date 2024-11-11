@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "calculadora": {
+    "fed-calculadora": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/calculadora",
+            "outputPath": "dist/fed-calculadora",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "calculadora:build:production"
+              "buildTarget": "fed-calculadora:build:production"
             },
             "development": {
-              "buildTarget": "calculadora:build:development"
+              "buildTarget": "fed-calculadora:build:development"
             }
           },
           "defaultConfiguration": "development"
